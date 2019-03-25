@@ -40,4 +40,6 @@
  
 ## 페이지 구조, 명칭 및 기능 구현 문서화
  
+ ![solshoppages](https://user-images.githubusercontent.com/47891732/54927315-49c56b00-4f55-11e9-9c67-0ffc09de65c1.jpg)
+
  

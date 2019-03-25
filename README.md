@@ -36,6 +36,7 @@
 
  DB구조 (ERD)
  
+ ![solshop_db_ERD](https://user-images.githubusercontent.com/47891732/54921217-93f41f80-4f48-11e9-9cff-d7817c745266.jpg)
  
  페이지 구조, 명칭 및 기능 구현 문서화
  

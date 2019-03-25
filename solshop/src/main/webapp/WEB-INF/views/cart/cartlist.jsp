@@ -68,7 +68,7 @@
 								<td>${row.money}</td>
 								<td>
 									<!-- <input type="button" id="btnDelete" value="삭제"> -->
-									<a href="${path}/cart/delete.do?cart_id=${row.cart_id}" >삭제</a>
+									<a href="${path}/cart/delete.do?cart_id=${row.cart_id}" style="text-decoration: none; color:red">삭제</a>
 							</tr>
 						</c:forEach>
 						<tfooter class="wishright">

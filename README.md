@@ -12,3 +12,11 @@
  
  화면 구성
  
+-메인 화면 및 상품목록 화면
+![상품목록](https://user-images.githubusercontent.com/47891732/54914022-6783d780-4f37-11e9-8f5a-69ff08da7aa9.jpg)
+
+-상품 상세화면
+![상품상세보기](https://user-images.githubusercontent.com/47891732/54914025-6783d780-4f37-11e9-980c-bdae655e4cba.jpg)
+
+-장바구니(위시리스트) 화면
+![장바구니화면](https://user-images.githubusercontent.com/47891732/54914026-681c6e00-4f37-11e9-8900-4f8a3056c23f.jpg)

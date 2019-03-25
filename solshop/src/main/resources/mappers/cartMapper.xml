@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 다른 mapper와 중복되지 않도록 네임스페이스 기재 -->
+<mapper namespace="cart">
+
+	<update id="modify">
+		update solcart set amount=#{amount} 
+		where cart_id=#{cart_id}
+	</update>
+
+	<delete id="deleteAll">
+		delete from solcart
+		where userid=#{userid}
+	</delete>
+
+	<delete id="deletecart">
+		delete from solcart
+		where cart_id=#{cart_id}
+	</delete>
+
+	<select id="sumMoney" resultType="int">
+		select nvl(sum(price*amount),0) money
+ 		from solproduct p, solcart c
+  		where p.product_id=c.product_id and userid=#{userid}
+	</select>
+
+	
+	<insert id="insertcart">
+		insert into solcart(cart_id, userid, product_id, amount) values
+		(solcart_seq.nextval,#{userid}, #{product_id}, #{amount})
+	</insert>
+
+	<select id="listcart" resultType="com.usol.solshop.model.cart.dto.CartDTO">
+		select cart_id, m.userid, m.name, p.product_id
+		, product_name, amount, price*amount money, p.picture_url, price, p.description
+		from solmember m, solcart c, solproduct p
+		where m.userid=c.userid and p.product_id=c.product_id
+		and m.userid=#{userid}
+	</select>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
